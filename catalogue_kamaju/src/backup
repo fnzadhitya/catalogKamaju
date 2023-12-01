@@ -1,0 +1,248 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa";
+import "./NavbarStyles.css";
+
+const Navbar = () => {
+  const [isDropdownActive, setIsDropdownActive] = useState(false);
+  const [isMobileDropdownActive, setIsMobileDropdownActive] = useState(false);
+
+  const handleCustomerClick = () => {
+    if (window.innerWidth <= 1040) {
+      setIsMobileDropdownActive(!isMobileDropdownActive);
+    } else {
+      setIsDropdownActive(!isDropdownActive);
+    }
+  };
+
+  return (
+    <div className={`header ${isDropdownActive || isMobileDropdownActive ? "header-bg" : ""}`}>
+      <Link to="/">
+        <h1>Catalog</h1>
+      </Link>
+      <div className="hamburger" onClick={handleCustomerClick}>
+        <FaBars size={20} style={{ color: "#fff" }} />
+      </div>
+      <ul className={`nav-menu ${isDropdownActive || isMobileDropdownActive ? "active" : ""}`}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li className={`nav-item dropdown ${isDropdownActive || isMobileDropdownActive ? "active" : ""}`}>
+          <h3 className="nav-link" onClick={handleCustomerClick}>
+            Customer <i className="fas fa-caret-down" ></i>
+          </h3>
+          {(isDropdownActive || isMobileDropdownActive) && (
+            <div className="dropdown-menu">
+              <ul>
+                <li>
+                  <Link to="/bjs">BHUMI JEPARA SERVICE</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/epn">ENERGIA PRIMA NUSANTARA</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ppa">PUTRA PERKASA ABADI</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/tn-mh">TRAKTOR NUSANTARA MH</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/tn-yc">TRAKTOR NUSANTARA YC</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/shn-mh">SWADAYA HARAPAN NUSANTARA MH</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/shn-of">SWADAYA HARAPAN NUSANTARA OF</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/shn-mg">SWADAYA HARAPAN NUSANTARA MG</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/utpe">UNITED TRACTORS PANDU ENGINEERING</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-ca">UNITED TRACTORS COP & ADMIN</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-p2u">UNITED TRACTORS P2U</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-ms">UNITED TRACTORS MS</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-mcs">UNITED TRACTORS MCS</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-pqa">UNITED TRACTORS PPC & QA</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-ad">UNITED TRACTORS ADMIN</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-ds">UNITED TRACTORS DS</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-os">UNITED TRACTORS OS</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-fo">UNITED TRACTORS FO</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-wd">UNITED TRACTORS WELDER</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-mo">UNITED TRACTORS MO</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/ut-yc">UNITED TRACTORS YC</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/abb">ASMIN BARA BRONANG</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/bkm">BINTANG KALIMANTAN MANDIRI</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/bp">BINA PERTIWI</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/bp-hshp">BINA PERTIWI HSHP</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/bp-p2g&p2u">BINA PERTIWI P2G & P2U</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/bp-tyr">BINA PERTIWI TYR</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/kpp">KALIMANTAN PRIMA PERSADA</Link>
+                </li>
+              </ul>
+              
+              <ul>
+                <li>
+                  <Link to="/kmsi">KOMATSU MARKETING AND SUPPORT INDONESIA</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/kra">KOMATSU REMANUFACTURING ASIA</Link>
+                </li>
+              </ul>
+              
+              <ul>
+                <li>
+                  <Link to="/pama-mk">PAMAPERSADA NUSANTARA MEKANIK</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/pama-wd">PAMAPERSADA NUSANTARA WELDER</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/smm">SUPRABARI MAPANINDI MINERAL</Link>
+                </li>
+              </ul>
+
+              <ul>
+                <li>
+                  <Link to="/top">TELEN ORBIT PRIMA</Link>
+                </li>
+              </ul>
+
+            </div>
+          )}
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Navbar;
