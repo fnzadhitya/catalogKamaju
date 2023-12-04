@@ -7,7 +7,7 @@
 
 .hero-img::before {
 	content: "";
-	background: url("C:\Users\ASUS\OneDrive\Documents\Catalogue\catalogue_kamaju\src\assets\tambang.jpg");
+	background: url("../assets/tambang.jpg");
 	background-size: cover;
 	background-position:  center top;
 	height: 100%;
