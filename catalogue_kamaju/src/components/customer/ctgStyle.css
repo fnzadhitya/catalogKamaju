@@ -9,13 +9,12 @@
 }
 
 h3 {
-	color: #ffffff;
-	/* margin-left: -20%; */
+	color: rgb(41, 41, 41);
 	padding: 0 0 1rem 0
 }
 
 .content h2 {
-	color: rgb(255, 255, 255);
+	color: rgb(41, 41, 41);
 	padding: 1.2rem 0;
 	text-align: center;
 }
@@ -27,7 +26,7 @@ h3 {
 }
 
 .catalog_container > div {
-	background-color: rgb(167, 169, 142);
+	background-color: rgb(128, 131, 108);
 	padding: 2.4rem 5rem;
 	border-radius: 2rem;
 	border: 1.5px solid transparent;
@@ -35,7 +34,7 @@ h3 {
 
 .catalog_container > div:hover {
 	background-color: transparent;
-	border-color: rgb(167, 169, 142);
+	border-color: rgb(128, 131, 108);
 }
 
 .catalog_content {
@@ -51,7 +50,7 @@ h3 {
 }
 
 .catalog_details small {
-	color: #ffffff;
+	color:rgb(41, 41, 41);
 }
 
 .seragam {
