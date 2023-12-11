@@ -65,7 +65,7 @@ const Bp_Hs = () => {
 					<img
 					  className={`seragam2 ${lightboxData && lightboxData.type === 'seragam' && lightboxData.index === index ? 'zoom-in' : 'zoom-out'}`}
 					  src={`${baseUrl}foto/${item.foto2}`}
-					  alt="foto2"
+					  alt=""
 					  onClick={() => openLightbox(`${baseUrl}foto/${item.foto2}`, index, 'seragam')}
 					/>
 				  )}
@@ -123,14 +123,14 @@ const Bp_Hs = () => {
 				  <img
 					className={`seragam1 ${lightboxData && lightboxData.type === 'apd' && lightboxData.index === index ? 'zoom-in' : 'zoom-out'}`}
 					src={`${baseUrl}foto/${item.foto}`}
-					alt="foto1"
+					alt=""
 					onClick={() => openLightbox(`${baseUrl}foto/${item.foto}`, index, 'apd')}
 				  />
 				  {item.foto2 && (
 					<img
 					  className={`seragam2 ${lightboxData && lightboxData.type === 'apd' && lightboxData.index === index ? 'zoom-in' : 'zoom-out'}`}
 					  src={`${baseUrl}foto/${item.foto2}`}
-					  alt="foto2"
+					  alt=""
 					  onClick={() => openLightbox(`${baseUrl}foto/${item.foto2}`, index, 'apd')}
 					/>
 				  )}
