@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 06 Des 2023 pada 09.02
+-- Waktu pembuatan: 11 Des 2023 pada 08.56
 -- Versi server: 10.4.28-MariaDB
 -- Versi PHP: 8.2.4
 
@@ -22,7 +22,7 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
- 
+
 --
 -- Struktur dari tabel `tb_apd`
 --
@@ -140,7 +140,7 @@ INSERT INTO `tb_apd` (`id_apd`, `nama_apd`, `foto`, `id_customer`, `id_job`, `ju
 (94, 'HELMET', 'helm_kuning.png', 13, 22, '1pcs', 'V-Gard', 'MSA', 'Kuning'),
 (95, 'SAFETY GLASS', 'kacamata-removebg-preview.png', 13, 22, '1pcs', 'Angler Clear Leans', 'CIG', 'Bening'),
 (96, 'EARPLUG', 'EARPLUG.png', 13, 22, '1pcs', '-', '3M Ultrafit', 'Biru Kuning'),
-(97, 'SAFETY SHOES', 'Sepatu TN.png', 14, 16, '1pcs', '-', '-', '-'),
+(97, 'SAFETY SHOES', 'Sepatu_TN.png', 14, 16, '1', '-', '-', '-'),
 (98, 'HELMET', 'helm_kuning.png', 14, 16, '1pcs', 'V-Gard', 'MSA', 'Kuning'),
 (99, 'SAFETY GLASS', 'kacamata-removebg-preview.png', 14, 16, '1pcs', 'Angler Clear Leans', 'CIG', 'Bening'),
 (100, 'EARPLUG', 'EARPLUG.png', 14, 16, '-', '-', '-', '-'),
@@ -329,7 +329,7 @@ INSERT INTO `tb_seragam` (`id_seragam`, `nama_seragam`, `foto1`, `foto2`, `id_cu
 (9, 'CHAMBRY', 'CHAMBRE KMJ FRONT (Small).png', 'CHAMBRE KMJ BACK (Small).png', 1, 22, '3pcs', 'Oxford', 'Kamaju', '3cm', 'Biru'),
 (10, 'KAOS POLO', 'POLO KMJ FRONT (Small).png', 'POLO KMJ BACK (Small).png', 1, 22, '4pcs', 'Baby Terry', 'Kamaju', '3cm', 'Kuning'),
 (11, 'CELANA JEANS', 'CELANA FRONT.png', 'CELANA BACK.png', 1, 22, '4pcs', '-', '-', '-', 'Biru Dongker'),
-(12, 'ROMPI', 'NO-image.png', '', 1, 22, '0', '-', '-', '-', '-'),
+(12, 'ROMPI', '\r\n', '', 1, 22, '0', '-', '-', '-', '-'),
 (13, 'CHAMBRY', 'BP  FRONT_Chambry.png', 'CHAMBRE TN BACK (Small).png', 3, 8, '2pcs', '-', '-', '-', '-'),
 (14, 'KAOS POLO', 'BP POLO FRONT .png', 'BP POLO BACK .png', 3, 8, '4pcs', 'Baby Terry', '-', '-', '-'),
 (15, 'CELANA JEANS', 'CELANA FRONT.png', 'CELANA BACK.png', 3, 8, '4pcs', '-', '-', '-', 'Biru Dongker'),
