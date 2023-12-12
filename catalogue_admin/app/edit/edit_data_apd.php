@@ -84,7 +84,9 @@ $view	= mysqli_fetch_array($query);
                         <div class="form-group">
                             <label>Foto</label>
                             <input type="file" class="form-control" name="foto" placeholder="Foto..." >
-                            <img src="foto/<?php echo $view['foto']; ?>" width="300px">
+                            <img src="foto/<?php echo $view['foto']; ?>" width=120px">
+                            <br>
+                            <input type="checkbox" name="hapus_foto"> Hapus Foto
                         </div>
                     </div>
                 </div>
