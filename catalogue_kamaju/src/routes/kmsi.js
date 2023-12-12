@@ -8,7 +8,7 @@ const Kmsi = () => {
   return (
 	<div>
 	  	<Navbar />
-		<HeroImg2 heading="KOMATSU MANUFACTURING AND SUPPORT INDONESIA" text="MKT | OPOERATOR | ALL AREA" image={logo}/>
+		<HeroImg2 heading="KOMATSU MANUFACTURING AND SUPPORT INDONESIA" text="MKT | OPERATOR | ALL AREA" image={logo}/>
 		<KMSI />
 		<Footer />
 	</div>
