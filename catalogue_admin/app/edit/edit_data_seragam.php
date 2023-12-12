@@ -89,15 +89,19 @@ $view	= mysqli_fetch_array($query);
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Foto Depan</label>
-                            <input type="file" class="form-control" name="foto1" placeholder="Foto..." >
+                            <input type="file" class="form-control" name="foto1" placeholder="Foto...">
                             <img src="foto/<?php echo $view['foto1']; ?>" width="120px">
+                            <br>
+                            <input type="checkbox" name="hapus_foto1"> Hapus Foto Depan
                         </div>
                     </div>
-                    <div class="col-sm-6">  
+                    <div class="col-sm-6">
                         <div class="form-group">
                             <label>Foto Belakang</label>
-                            <input type="file" class="form-control" name="foto2" placeholder="Foto..." >
+                            <input type="file" class="form-control" name="foto2" placeholder="Foto...">
                             <img src="foto/<?php echo $view['foto2']; ?>" width="120px">
+                            <br>
+                            <input type="checkbox" name="hapus_foto2"> Hapus Foto Belakang
                         </div>
                     </div>
                 </div>
