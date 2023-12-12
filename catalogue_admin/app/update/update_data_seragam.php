@@ -11,21 +11,26 @@ $logo = $_POST['logo'];
 $scotlight = $_POST['scotlight'];
 $warna = $_POST['warna'];
 
-// Retrieve existing photo names from the database
 $query_get_photos = mysqli_query($koneksi, "SELECT foto1, foto2 FROM tb_seragam WHERE id_seragam='$id'");
 $existing_photos = mysqli_fetch_assoc($query_get_photos);
 
-// Proses untuk foto1
-$foto1 = $existing_photos['foto1'];
 if (!empty($_FILES['foto1']['name'])) {
+    if (!empty($_POST['hapus_foto1']) && $_POST['hapus_foto1'] == 'on') {
+        unlink('../foto/' . $existing_photos['foto1']);
+        $existing_photos['foto1'] = null; 
+    }
+
     $foto1  = $_FILES['foto1']['name'];
     $file_tmp1 = $_FILES['foto1']['tmp_name'];
     move_uploaded_file($file_tmp1, '../foto/' . $foto1);
 }
 
-// Proses untuk foto2
-$foto2 = $existing_photos['foto2'];
 if (!empty($_FILES['foto2']['name'])) {
+    if (!empty($_POST['hapus_foto2']) && $_POST['hapus_foto2'] == 'on') {
+        unlink('../foto/' . $existing_photos['foto2']);
+        $existing_photos['foto2'] = null;
+    }
+
     $foto2  = $_FILES['foto2']['name'];
     $file_tmp2 = $_FILES['foto2']['tmp_name'];
     move_uploaded_file($file_tmp2, '../foto/' . $foto2);
