@@ -47,8 +47,8 @@
 	font-size: 1.4rem;
 	text-align: center;
 }
-.hero-img img {
 
+.hero-img img {
 	max-width: 500px;
 }
 
@@ -59,7 +59,10 @@
 	}
 
 	.hero-img p {
-		font-size: 1.2rem;
+		font-size: 1rem;
+	}
+	.hero-img img {
+		max-width: 270px;
 	}
 }
 
