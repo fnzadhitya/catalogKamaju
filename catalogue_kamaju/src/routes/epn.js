@@ -9,7 +9,7 @@ const Epn = () => {
   return (
 	<div>
 	  	<Navbar />
-		<HeroImg2 heading="ENERGIA PRIMA NUSANTARA" text="PLNT | MEKANIK ELEKTRIK | JAKARTA" image={logo}/>
+		<HeroImg2 heading="ENERGIA PRIMA NUSANTARA" text="PLANT | MEKANIK ELEKTRIK | JAKARTA" image={logo}/>
 		<EPN />
 		<Footer />
 	</div>
