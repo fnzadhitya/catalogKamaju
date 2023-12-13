@@ -9,7 +9,7 @@ const Ppa = () => {
   return (
 	<div>
 	  	<Navbar />
-		<HeroImg2 heading="PUTRA PERKASA ABADI" text="PLNT | MEKANIK A2B | SATUI" image={logo}/>
+		<HeroImg2 heading="PUTRA PERKASA ABADI" text="PLANT | MEKANIK A2B | SATUI" image={logo}/>
 		<PPA />
 		<Footer />
 	</div>
