@@ -8,46 +8,51 @@
 	z-index: 10;
 	background-color: rgba(0, 0, 0, 0.8);
 	transition: 0.5s;
-  }
-  
-  .header h1 {
+}
+
+.header h1 {
 	position: absolute;
+	font-size: 30px;
 	left: 20px;
 	top: 3px;
-  }
-  
-  .menu-toggle {
+}
+
+.header span {
+	color: aquamarine;
+}
+
+.menu-toggle {
 	display: none;
 	cursor: pointer;
 	margin-right: 20px;
-  }
-  
-  .nav-menu {
+}
+
+.nav-menu {
 	list-style: none;
 	display: flex;
 	align-items: center;
-  }
-  
-  .nav-menu li {
+}
+
+.nav-menu li {
 	margin: 0 10px;
-	position: relative; 
-  }
-  
-  li a:hover {
+	position: relative;
+}
+
+li a:hover {
 	color: yellow;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
 	color: white;
 	font-weight: 400;
 	cursor: pointer;
-  }
-  
-  .nav-link:hover {
+}
+
+.nav-link:hover {
 	color: yellow;
-  }
-  
-  .dropdown-menu {
+}
+
+.dropdown-menu {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -61,44 +66,50 @@
 	z-index: 99;
 	overflow-y: auto;
 	display: none;
-  }
-  
-  .nav-item.dropdown .dropdown-menu {
+}
+
+.nav-item.dropdown .dropdown-menu {
 	display: flex;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
 	.menu-toggle {
-	  display: initial;
+		display: initial;
 	}
-  
+
 	.nav-menu {
-	  display: none;
-	  position: fixed;
-	  top: 0;
-	  right: 0;
-	  height: 100vh;
-	  width: 70%;
-	  background-color: rgba(0, 0, 0, 0.9);
-	  padding: 20px;
-	  box-sizing: border-box;
-	  overflow-y: auto;
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100vh;
+		width: 70%;
+		background-color: rgba(0, 0, 0, 0.9);
+		padding: 20px;
+		box-sizing: border-box;
+		overflow-y: auto;
 	}
-  
+
+	.header h1 {
+		font-size: 25px;
+		left: 20px;
+		top: 10px;
+	}
+
 	.header-mobile-active .nav-menu {
-	  display: flex;
-	  flex-direction: column;
-	  justify-content: flex-start;
-	  align-items: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
-  
+
 	.nav-menu.mobile-active li {
-	  margin: 20px 0;
+		margin: 20px 0;
 	}
-  
+
 	.nav-item.dropdown.active .dropdown-menu {
-	  left: initial;
-	  right: 0;
+		left: initial;
+		right: 0;
 	}
 
 	.dropdown-menu {
@@ -113,6 +124,5 @@
 		padding: 10px;
 		border: 0.5px solid #000;
 		z-index: 1;
-	  }
-  }
-  
+	}
+}
