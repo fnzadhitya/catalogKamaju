@@ -8,7 +8,7 @@ const bjs = () => {
   return (
 	<div>
 	  	<Navbar />
-		<HeroImg2 heading="BHUMI JEPARA SERVICE" text="PLNT | OPERATOR | JEPARA" image={logo} />
+		<HeroImg2 heading="BHUMI JEPARA SERVICE" text="PLANT | OPERATOR | JEPARA" image={logo} />
 		<BJS />
 		<Footer />
 	</div>
