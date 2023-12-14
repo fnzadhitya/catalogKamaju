@@ -48,6 +48,10 @@
 		max-width: 480px;
 	}
 
+	.social {
+		margin-left: 20px;
+	}
+
 	.icon {
 		margin-right: 1rem;
 	}
