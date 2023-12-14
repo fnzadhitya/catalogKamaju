@@ -73,31 +73,41 @@ h3 {
 	left: 15%;
 }
 
-@media screen and (max-width: 740px)  {
+@media screen and (max-width: 640px)  {
+	h3 {
+		font-size: 16px;
+		padding: 0 rem 0 0rem;
+	}
+
 	.catalog_container {
-		max-width: 90%;
+		max-width: 95%;
 		margin: auto;
 		grid-template-columns: 1fr;
 		align-items: center;
 		justify-content: center;
 	}
 
-	.catalog_content {
-		display: grid;
-		padding-right: 0rem;
+	.catalog_container > div {
+		padding: 2.4rem .5rem 2.4rem 1.3rem;
+		border-radius: 2rem;
 	}
+
 
 	.seragam1 {
 		width: 100px;
 		position: relative;
 		top: -7%;
-		left: 10%;
+		left: 6%;
 	}
 	
 	.seragam2 {
 		width: 100px;
 		position: relative;
 		top: -7%;
-		left: 15%;
+		left: 6%;
+	}
+
+	.catalog_details small {
+		font-size: 12px;
 	}
 }
