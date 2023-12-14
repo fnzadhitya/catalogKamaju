@@ -40,7 +40,7 @@ const Navbar = () => {
         <h1>Catalog<span>Kamaju</span></h1>
       </Link>
       <div className="menu-toggle" onClick={handleMobileMenuToggle}>
-        {isMobileMenuActive ? <FaTimes size={20} style={{ color: "#fff" }} /> : <FaBars size={20} style={{ color: "#fff" }} />}
+        {isMobileMenuActive ? <FaTimes size={20} style={{ color: "rgba(0, 0, 0, 0.8)" }} /> : <FaBars size={20} style={{ color: "#fff", marginRight: "-2rem"}} />}
       </div>
       <ul className={`nav-menu ${isMobileMenuActive ? "mobile-active" : ""}`} ref={menuRef}>
         <li>
