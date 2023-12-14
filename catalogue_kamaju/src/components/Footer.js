@@ -1,5 +1,4 @@
 import "./FooterStyles.css";
-
 import React from "react";
 import { FaYoutube, FaInstagram, FaLinkedinIn, FaGlobe, FaMap } from "react-icons/fa";
 
@@ -20,21 +19,21 @@ const Footer = () => {
     window.open('https://maps.app.goo.gl/si57W7XoMQ4X72cq9', '_blank');
   }
 
-  return <div className="footer">
-    <div className="footer-container">
-
-      <div className="top">
-        <div className="social">
-          <FaYoutube onClick={openYoutube} size={26} style={{color: "#fff", marginRight: "2rem" }} />
-          <FaInstagram onClick={openInstagram} size={26} style={{color: "#fff", marginRight: "2rem"}} />
-          <FaLinkedinIn onClick={openLinkedinIn} size={26} style={{color: "#fff", marginRight: "2rem"}} />
-          <FaGlobe onClick={openWebsite} size={24} style={{color: "#fff", marginRight: "2rem"}} />
-          <FaMap onClick={openMap} size={24} style={{color: "#fff", marginRight: "2rem"}} />
+  return (
+    <div className="footer">
+      <div className="footer-container">
+        <div className="top">
+          <div className="social">
+            <FaYoutube onClick={openYoutube} size={24} className="icon" />
+            <FaInstagram onClick={openInstagram} size={24} className="icon" />
+            <FaLinkedinIn onClick={openLinkedinIn} size={24} className="icon" />
+            <FaGlobe onClick={openWebsite} size={24} className="icon" />
+            <FaMap onClick={openMap} size={24} className="icon" />
+          </div>
         </div>
       </div>
-      
     </div>
-  </div>;
+  );
 };
 
 export default Footer;
